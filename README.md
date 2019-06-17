@@ -1,2 +1,2 @@
 # me-tira-do-tedio
-Blog para captão de leads em eventos
+Blog para captação de leads em eventos
