@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const Lead = require('./js/leads')
+const Lead = require('./public/js/leads')
 
 const app = express();
 

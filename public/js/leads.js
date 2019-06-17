@@ -1,4 +1,4 @@
-const firebase = require('../server/firebase');
+const firebase = require('../../server/firebase');
 const iconv = require('iconv-lite');
 const csv = require('csv-stringify');
 
