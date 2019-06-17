@@ -4,10 +4,12 @@ const Lead = require('./public/js/leads')
 
 const app = express();
 
+app.use(express.static('public'));
+
 app.use(bodyParser.urlencoded({ extended: true}));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/html/index.html')
+    res.sendFile(__dirname + '/public/html/index.html')
 });
 
 app.post('/leads', (req, res) => {
