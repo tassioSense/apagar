@@ -1,0 +1,22 @@
+header {
+    background-image: url(""); 
+    background-color: #BEBEBE;
+    height: 476px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+}
+
+
+header h1 {
+    width: 202px;
+    height: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px
+  }
