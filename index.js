@@ -19,10 +19,16 @@ app.get('/article', (req, res) => {
 });
 
 app.post('/leads', (req, res) => {
-   const { name } = req.body;
-   const lead = Lead.newLead({ name }); 
+   const teste = req.body;
+   const lead = Lead.newLead(teste); 
     res.send(lead)
 })
+
+// app.post('/leads', (req, res) => {
+//     const { name } = req.body;
+//     const lead = Lead.newLead({ name }); 
+//      res.send(lead)
+//  })
 
 app.get('/mailing-list-csv', (req, res) => {
     res.setHeader('Content-Type', 'text/csv');

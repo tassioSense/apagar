@@ -16,9 +16,15 @@
 
     <!-- helpers -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -200,15 +206,21 @@
             </div>
         </div>
 
+        <form action="/leads" method="POST">
+            <input type="text" name="name">
+            <input type="email" name="email">
+            <input type="submit" value="submit">
+        </form>
+
 
         <div class="row mt20">
             <div class="col-md-3">
             </div>
             <div class="col-md-6">
-                <form>
+                <form action="/leads" method="POST">
                     <div class="form-group row">
                         <div class="maxwd">
-                            <input type="email" class="form-control" id="colFormLabel" placeholder="Nome">
+                            <input type="text" name="name" class="form-control" id="colFormLabel" placeholder="Nome">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -217,7 +229,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <button type="button" class="btn btn-primary btn-lg maxwd">Enviar</button>
+                        <button type="submit" class="btn btn-primary btn-lg maxwd">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -229,6 +241,20 @@
     <div class="footer-copyright text-left py-3 bkgGrey mt20">© 2019 Copyright:
         <a href="">Me tira do tédio</a>
     </div>
+
+    <script type="application/javascript">
+        $(function() {
+          $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function(json) {
+              console.log("Meu IP público é: ", json.ip);
+              let ip = $('#ip');
+              ip[0].innerHTML = json.ip ;
+            }
+          );
+        });
+
+      </script>
+      <span id="ip" style="display: block">  </span>
 
 </body>
 
