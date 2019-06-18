@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 // article
 app.get('/article', (req, res) => {
-    res.sendFile(__dirname + '/public/html/article/article.html')
+    res.sendFile(__dirname + '/public/articles/article.html')
 });
 
 app.post('/leads', (req, res) => {
