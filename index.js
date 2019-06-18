@@ -8,8 +8,14 @@ app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true}));
 
+// home/index
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/html/index.html')
+    res.sendFile(__dirname + '/index.html')
+});
+
+// article
+app.get('/article', (req, res) => {
+    res.sendFile(__dirname + '/public/html/article/article.html')
 });
 
 app.post('/leads', (req, res) => {
