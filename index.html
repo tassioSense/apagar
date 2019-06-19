@@ -39,7 +39,8 @@
     <header>
         <div class="brand-social">
             <a href="">
-                <h1 id="our-brand">Metiradotedio</h1>
+                <img src="/assest/img/metiradotedio.png" alt="Me tira do tédio">
+                <h1 style="display: none" id="our-brand">Metiradotedio</h1>
             </a>
             <div class="social">
                 <a href="" class="social-item"> </a>
@@ -209,8 +210,25 @@
         <form action="/leads" method="POST">
             <input type="text" name="name">
             <input type="email" name="email">
+            <input style="display: none" type="text" name="ip" id="ip">
             <input type="submit" value="submit">
         </form>
+
+
+
+    <script type="application/javascript">
+        $(function() {
+          $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function(json) {
+              console.log("Meu IP público é: ", json.ip);
+              let ip = $('#ip');
+              ip[0].value = json.ip ;
+            }
+          );
+        });
+
+      </script>
+
 
 
         <div class="row mt20">
@@ -242,19 +260,7 @@
         <a href="">Me tira do tédio</a>
     </div>
 
-    <script type="application/javascript">
-        $(function() {
-          $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-            function(json) {
-              console.log("Meu IP público é: ", json.ip);
-              let ip = $('#ip');
-              ip[0].innerHTML = json.ip ;
-            }
-          );
-        });
-
-      </script>
-      <span id="ip" style="display: block">  </span>
+      <!-- <span id="ip" style="display: block">  </span> -->
 
 </body>
 

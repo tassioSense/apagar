@@ -20,6 +20,7 @@ app.get('/article', (req, res) => {
 
 app.post('/leads', (req, res) => {
    const teste = req.body;
+   console.log(teste.ip)
    const lead = Lead.newLead(teste); 
     res.send(lead)
 })

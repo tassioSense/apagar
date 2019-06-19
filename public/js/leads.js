@@ -7,12 +7,12 @@ const newLead = teste => {
     let date = new Date();
     let brDate = date.toLocaleDateString('pt-BR')
     let brTime = date.toLocaleTimeString('pt-BR')
-    let ip = document.querySelector('#ip');
-    let ipNow = ip[0];
-    console.log(ipNow)
+    // let ip = document.querySelector('#ip');
+    // let ipNow = ip[0];
+    // console.log(ipNow)
 
     const leads = firebase.database().ref('leads');
-    const lead = leads.push([teste.name, teste.email, `${brDate} ${brTime}`]);
+    const lead = leads.push([teste.name, teste.email, `${brDate} ${brTime}`, teste.ip]);
     return lead;    
 };
 
