@@ -3,16 +3,12 @@ const firebase = require('../../server/firebase');
 const iconv = require('iconv-lite');
 const csv = require('csv-stringify');
 
-const newLead = teste => {
+const newLead = dataForm => {
     let date = new Date();
     let brDate = date.toLocaleDateString('pt-BR')
     let brTime = date.toLocaleTimeString('pt-BR')
-    // let ip = document.querySelector('#ip');
-    // let ipNow = ip[0];
-    // console.log(ipNow)
-
     const leads = firebase.database().ref('leads');
-    const lead = leads.push([teste.name, teste.email, `${brDate} ${brTime}`, teste.ip]);
+    const lead = leads.push([dataForm.email, dataForm.name, , dataForm.ip, 'B2C' , `${brDate} ${brTime}`]);
     return lead;    
 };
 

@@ -20,16 +20,9 @@ app.get('/article', (req, res) => {
 
 app.post('/leads', (req, res) => {
    const teste = req.body;
-   console.log(teste.ip)
    const lead = Lead.newLead(teste); 
-    res.send(lead)
+    res.send("Obrigado por se cadastrar. Vamos te tirar do tédio! ;)")
 })
-
-// app.post('/leads', (req, res) => {
-//     const { name } = req.body;
-//     const lead = Lead.newLead({ name }); 
-//      res.send(lead)
-//  })
 
 app.get('/mailing-list-csv', (req, res) => {
     res.setHeader('Content-Type', 'text/csv');

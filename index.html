@@ -16,6 +16,7 @@
 
     <!-- helpers -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script> -->
@@ -37,40 +38,59 @@
 
 <body>
     <header>
-        <div class="brand-social">
-            <a href="">
-                <img src="/assest/img/metiradotedio.png" alt="Me tira do tédio">
-                <h1 style="display: none" id="our-brand">Metiradotedio</h1>
-            </a>
-            <div class="social">
-                <a href="" class="social-item"> </a>
-                <a href="" class="social-item"> </a>
-                <a href="" class="social-item"> </a>
+        <div class="header-content">
+            <div class="brand-social">
+                <a href="">
+                    <img src="/assest/img/metiradotedio.png" alt="Me tira do tédio">
+                    <h1 style="display: none" id="our-brand">Metiradotedio</h1>
+                </a>
+                <div class="social">
+                    <a href="https://www.facebook.com/metiradotedioblog" class="social-item"> <img src="/assest/img/facebook.png" alt="facebook da me tira do tédio"> </a>
+                    <a href="https://www.instagram.com/metiradotedio_/?hl=pt-br" class="social-item"> <img src="/assest/img/instagram.png" alt="intagram da me tira do tédio"></a>
+                </div>
             </div>
-        </div>
+    
+            <a href="" class="week btn">
+                <h1>Você sabe como organizar um coffee break para eventos ?</h1>
+            </a>
 
-        <a href="" class="week">
-            <h2>UX e chatbots: boas práticas para desenhar interfaces conversacionais</h2>
-        </a>
+            <a href="" class="btn">
+                <p>
+                   Confira aqui e veja como esse planejamento pode potencializar a experiência do público na participação do seu evento!
+                </p>
+            </a>
+        </div>
     </header>
 
     <div class="container">
-        <div class="card mb-3 mt20">
+
+        <div class="event card mb-3 mt20">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="" class="card-img" alt="...">
+                    <a class="btn" href="/article">
+                        <img src="/assest/img/main/dicas_para_pre.png" class="card-img" alt="Dicas para os pré-esquentas da 23ª Parada do Orgulho!">
+                    </a>
                 </div>
                 <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="title card-body">
+                        <a href="/article">
+                            <h2 class="card-title">Dicas para os pré-esquentas da 23ª Parada do Orgulho!</h2>
+                        </a>
+                        <a href="/article">
+                            <p class="card-text">Chegou a semana da 23ª Parada do Orgulho LGBT+ aqui em São Paulo e temos as melhores dicas para vocês aproveitarem essa semana inteira de eventos e o grande dia!! Confira!!</p>
+                        </a>
+                        <div class="author">
+                            <img src="/assest/img/main/laurohsilvas.png" alt="Autor laurohsilvas">
+                            <div class="author-content">
+                                <p>laurohsilvas100@</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
+<!-- 
         <div>
             <div class="card-deck">
                 <div class="card">
@@ -153,8 +173,6 @@
             </div>
         </div>
 
-        <!-- header -->
-
         <div class="card mt20">
             <div class="card-header">
                 UX e chatbots: boas práticas para desenhar interfaces conversacionais
@@ -205,13 +223,17 @@
                     conversacionais. Se você não está familiarizado com esses termos, sugiro dar uma lida nestes
                     artigos antes de continuar:</p>
             </div>
+        </div> -->
+
+        <div class="newsletter">
+            <h3>Se inscreva em nosso Newsletter!</h3>
         </div>
 
-        <form action="/leads" method="POST">
-            <input type="text" name="name">
-            <input type="email" name="email">
+        <form class="get-lead" action="/leads" method="POST">
+            <input class="field" type="text" name="name" placeholder="Nome completo">
+            <input class="field" type="email" name="email" placeholder="digite o e-mail">
             <input style="display: none" type="text" name="ip" id="ip">
-            <input type="submit" value="submit">
+            <input class="add" type="submit" value="CADASTRAR">
         </form>
 
 
@@ -230,7 +252,7 @@
       </script>
 
 
-
+<!-- 
         <div class="row mt20">
             <div class="col-md-3">
             </div>
@@ -259,8 +281,7 @@
     <div class="footer-copyright text-left py-3 bkgGrey mt20">© 2019 Copyright:
         <a href="">Me tira do tédio</a>
     </div>
-
-      <!-- <span id="ip" style="display: block">  </span> -->
+ -->
 
 </body>
 
