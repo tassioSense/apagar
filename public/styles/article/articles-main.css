@@ -1,0 +1,75 @@
+  
+   .maxwd{
+       width: 100%;
+   }
+   
+   .bkgGrey{
+       background-color: rgba(128, 128, 128, 0.384)
+   }
+   
+   header {
+       background-image: url(""); 
+       background-color: #BEBEBE;
+       height: 476px; 
+       background-position: center; 
+       background-repeat: no-repeat; 
+       background-size: cover;
+       display: flex;
+       flex-direction: column;
+       padding: 48px;
+   }
+   
+   header h1 {
+       width: 202px;
+       height: 48px;
+       font-family: 'Montserrat';
+       font-style: normal;
+       font-weight: bold;
+       font-size: 48px;
+       color: #FFFFFF;
+       line-height: 58px;
+     }
+   
+   
+     header h2 {
+       width: 202px;
+       height: 48px;
+       font-family: 'Montserrat';
+       font-style: normal;
+       font-weight: bold;
+       font-size: 32px;
+       line-height: 48px;
+       color: #FF852E;
+     }
+   
+     header h3 {
+       width: 202px;
+       height: 48px;
+       font-family: 'Montserrat';
+       font-style: normal;
+       font-weight: bold;
+       font-size: 24px;
+       color: #FF852E;
+       line-height: 36px;
+     }
+   
+     header h4 {
+       width: 202px;
+       height: 48px;
+       font-family: 'Montserrat';
+       font-style: normal;
+       font-weight: medium;
+       font-size: 18px;
+       line-height: 27px;
+     }
+   
+     body {
+       width: 202px;
+       height: 48px;
+       font-family: 'Source Serif Pro';
+       font-style: normal;
+       font-weight: medium;
+       font-size: 24px;
+       line-height: 27px;
+     }
+   

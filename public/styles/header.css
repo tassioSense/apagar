@@ -1,5 +1,4 @@
 header {
-    background-image: url("../assest/img/header/Rectangle.png"); 
     height: 476px; 
     width: 100%;
     background-position: center; 
@@ -65,9 +64,6 @@ header {
     letter-spacing: 0.15px;
     text-align: left;
     color: #FFF;
-  }
-  .event {
-
   }
   
   .title h2 {

@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
 });
 
 // article
-app.get('/article', (req, res) => {
-    res.sendFile(__dirname + '/public/articles/article.html')
+app.get('/voce-sabe-como-organizar-um-coffee-break-para-eventos', (req, res) => {
+    res.sendFile(__dirname + '/public/articles/voce-sabe-como-organizar-um-coffee-break-para-eventos.html')
 });
 
 app.post('/leads', (req, res) => {
